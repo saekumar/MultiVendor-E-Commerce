@@ -1,6 +1,15 @@
 import './App.css'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import { LoginPage, SignUpPage, ActivationPage, HomePage } from './Routes'
+import {
+  LoginPage,
+  SignUpPage,
+  ActivationPage,
+  HomePage,
+  ProductsPage,
+  BestSellingPage,
+  Eventpage,
+  FaqPage,
+} from './Routes'
 import toast, { Toaster } from 'react-hot-toast'
 import { useEffect } from 'react'
 import { useDispatch } from 'react-redux'
@@ -23,6 +32,10 @@ function App() {
               path="/activation/:activationToken"
               element={<ActivationPage />}
             />
+            <Route path="/products" element={<ProductsPage />} />
+            <Route path="/best-selling" element={<BestSellingPage />} />
+            <Route path="/events" element={<Eventpage />} />
+            <Route path="/faq" element={<FaqPage />} />
           </Routes>
         </BrowserRouter>
       </div>

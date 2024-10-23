@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { Button } from '@/components/ui/button'
 import {
@@ -16,8 +16,9 @@ const Dropdown = ({ categoriesData }) => {
 
   const handleCategoryClick = (category) => {
     navigate(`/products?category=${category.title}`)
+    setCategoryItem(category.title)
   }
-
+  const [categoryItem, setCategoryItem] = useState('All Categories')
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
@@ -26,13 +27,22 @@ const Dropdown = ({ categoriesData }) => {
           <button
             className={`h-[100%] w-full flex justify-between items-center pl-10 bg-white font-sans text-lg font-[500] select-none rounded-t-md`}
           >
-            All Categories
+            {categoryItem}
             <IoIosArrowDown size={20} className="ml-2" />
           </button>
         </div>
       </DropdownMenuTrigger>
 
-      <DropdownMenuContent className="w-56 bg-orange-50">
+      <DropdownMenuContent className="w-56 bg-orange-50 shadow-2xl">
+        <DropdownMenuItem
+          onClick={() => {
+            navigate('/products')
+            setCategoryItem('All Categories')
+          }}
+          className="flex items-center justify-start m-3 cursor-pointer select-none text-[18px] font-Roboto"
+        >
+          All Categories
+        </DropdownMenuItem>
         {categoriesData.map((category, index) => (
           <DropdownMenuItem
             key={index}
@@ -51,13 +61,12 @@ const Dropdown = ({ categoriesData }) => {
                   userSelect: 'none',
                 }}
               />
-              <h3 className="m-3 cursor-pointer select-none text-[18px] font-Roboto">
+              <h3 className="m-2 cursor-pointer select-none text-[18px] font-Roboto">
                 {category.title}
               </h3>
             </div>
           </DropdownMenuItem>
         ))}
-        <DropdownMenuSeparator />
       </DropdownMenuContent>
     </DropdownMenu>
   )
