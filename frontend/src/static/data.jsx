@@ -27,7 +27,7 @@ export const brandingData = [
   {
     id: 1,
     title: 'Free Shipping',
-    Description: 'From all orders over 100$',
+    Description: 'From all orders over 1000',
     icon: (
       <svg
         width="36"
@@ -221,21 +221,21 @@ export const categoriesData = [
     id: 5,
     title: 'Shoes',
     subTitle: '',
-    image_Url:
-      'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvBQPQMVNRd6TtDkGs2dCri0Y-rxKkFOiEWw&usqp=CAU',
+    image_Url: 'https://m.media-amazon.com/images/I/71LRU7gXJUL._SY695_.jpg',
   },
   {
     id: 6,
     title: 'Gifts',
     subTitle: '',
     image_Url:
-      'https://securecdn.pymnts.com/wp-content/uploads/2014/11/Gifts-Photo-700x489.jpg',
+      'https://images.pexels.com/photos/269887/pexels-photo-269887.jpeg?auto=compress&cs=tinysrgb&w=600',
   },
   {
     id: 7,
     title: 'Pet Care',
     subTitle: '',
-    image_Url: 'https://cdn.openpr.com/T/c/Tc15444071_g.jpg',
+    image_Url:
+      'https://plus.unsplash.com/premium_photo-1683121435740-e290468c71c3?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8cGV0JTIwY2FyZXxlbnwwfHwwfHx8MA%3D%3D',
   },
   {
     id: 8,
@@ -271,11 +271,7 @@ export const productData = [
     image_Url: [
       {
         public_id: 'test',
-        url: 'https://www.istorebangladesh.com/images/thumbs/0000286_macbook-pro-m1_550.png',
-      },
-      {
-        public_id: 'test',
-        url: 'https://www.istorebangladesh.com/images/thumbs/0000286_macbook-pro-m1_550.png',
+        url: 'https://img.freepik.com/free-photo/laptop-with-colorful-screen-white-background-3d-rendering_1142-58703.jpg?size=626&ext=jpg',
       },
     ],
     shop: {
@@ -331,7 +327,7 @@ export const productData = [
     image_Url: [
       {
         public_id: 'test',
-        url: 'https://www.istorebangladesh.com/images/thumbs/0000286_macbook-pro-m1_550.png',
+        url: 'https://img.freepik.com/free-photo/laptop-with-colorful-screen-white-background-3d-rendering_1142-58703.jpg?size=626&ext=jpg',
       },
       {
         public_id: 'test',
@@ -393,7 +389,7 @@ export const productData = [
     image_Url: [
       {
         public_id: 'test',
-        url: 'https://mirzacdns3.s3.ap-south-1.amazonaws.com/cache/catalog/RLV0015/2-800x800.jpg',
+        url: 'https://m.media-amazon.com/images/I/71LRU7gXJUL._SY695_.jpg',
       },
       {
         public_id: 'test',
