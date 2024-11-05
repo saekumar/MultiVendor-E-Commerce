@@ -6,7 +6,7 @@ import ProductsPage from './pages/ProductsPage'
 import BestSellingPage from './pages/BestSellingPage'
 import Eventpage from './pages/Eventpage'
 import FaqPage from './pages/FaqPage'
-
+import ProductDetailsPage from './pages/ProductDetailsPage'
 export {
   LoginPage,
   SignUpPage,
@@ -16,4 +16,5 @@ export {
   BestSellingPage,
   Eventpage,
   FaqPage,
+  ProductDetailsPage,
 }

@@ -16,6 +16,8 @@ import { CgProfile } from 'react-icons/cg'
 import Dropdown from './Dropdown'
 import Navbar from './Navbar'
 import toast from 'react-hot-toast'
+import ShoppingCartComponent from '../ShoppingCart/ShoppingCart'
+import WishlistComponent from '../Wishlist/WishlistComponent'
 const Header = ({ activeHeading }) => {
   const [searchTerm, setSearchTerm] = useState('')
   const [searchData, setSearchData] = useState(null)
@@ -155,18 +157,15 @@ const Header = ({ activeHeading }) => {
           <div className="flex">
             <div className={`${styles.noramlFlex}`}>
               <div className="relative cursor-pointer mr-[15px]">
-                <AiOutlineHeart size={30} className="text-white" />
-                <span className="absolute right-0 top-0 rounded-full bg-black/90 w-4 h-4 top right p-0 m-0 text-white font-mono text-[12px] leading-tight text-center">
-                  1
-                </span>
+                
+                <WishlistComponent />
               </div>
             </div>
             <div className={`${styles.noramlFlex}`}>
               <div className="relative cursor-pointer mr-[15px]">
-                <AiOutlineShoppingCart size={30} className="text-white" />
-                <span className="absolute right-0 top-0 rounded-full bg-black/90 w-4 h-4 top right p-0 m-0 text-white font-mono text-[12px] leading-tight text-center">
-                  1
-                </span>
+                {/* <AiOutlineShoppingCart size={30} className="text-white" /> */}
+
+                <ShoppingCartComponent />
               </div>
             </div>
             <div className={`${styles.noramlFlex}`}>

@@ -29,7 +29,7 @@ const faqQueries = [
   },
   {
     qsn: ' How do I contact customer support?',
-    ans: 'You can contact our customer support team by emailing us at support@myecommercestore.com, or by calling us at (555) 123-4567 between the hours of 9am and 5pm EST, Monday through Friday.',
+    ans: 'You can contact our customer support team by emailing us at saenus@gmail.com, or by calling us at 8074149763 between the hours of 9am and 5pm EST, Monday through Friday.',
   },
   {
     qsn: 'Can I change or cancel my order?',
@@ -54,7 +54,7 @@ const Faq = () => {
         <AccordionTrigger className="text-lg sm:text-xl font-semibold p-4 hover:bg-gray-100 transition-colors">
           {query.qsn}
         </AccordionTrigger>
-        <AccordionContent className="text-base sm:text-lg p-4 bg-white">
+        <AccordionContent className="text-gray-50 sm:text-lg p-4 bg-gray-800">
           {query.ans}
         </AccordionContent>
       </AccordionItem>

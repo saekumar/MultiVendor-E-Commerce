@@ -9,11 +9,13 @@ import {
   BestSellingPage,
   Eventpage,
   FaqPage,
+  ProductDetailsPage,
 } from './Routes'
 import toast, { Toaster } from 'react-hot-toast'
 import { useEffect } from 'react'
 import { useDispatch } from 'react-redux'
 import { loadUser } from './reduxOperations/actions/user'
+
 function App() {
   const dispatch = useDispatch()
 
@@ -33,6 +35,7 @@ function App() {
               element={<ActivationPage />}
             />
             <Route path="/products" element={<ProductsPage />} />
+            <Route path="/product/:name" element={<ProductDetailsPage />} />
             <Route path="/best-selling" element={<BestSellingPage />} />
             <Route path="/events" element={<Eventpage />} />
             <Route path="/faq" element={<FaqPage />} />
