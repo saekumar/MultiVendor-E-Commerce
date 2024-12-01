@@ -136,6 +136,7 @@ router.post('/create-user', upload.single('file'), async (req, res, next) => {
 
     const activationToken = createActivationToken(user._id)
     const activationUrl = `http://localhost:5173/activation/${activationToken}`
+    console.log(activationUrl)
 
     try {
       await sendMail({
@@ -211,6 +212,10 @@ router.post('/login-user', async (req, res, next) => {
 
     if (!checkPass) {
       return next(new ErrorHandler('Incorrect Credentials', 400))
+    }
+    const isUserActivated = await user.isActivated
+    if (isUserActivated === false) {
+      return next(new ErrorHandler('User Not Verified', 400))
     }
     const reWrittenUser = await User.findOne({ email }).select('-password')
     sendToken(reWrittenUser, 201, res)
