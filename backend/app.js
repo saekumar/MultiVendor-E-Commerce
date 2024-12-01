@@ -11,7 +11,7 @@ const app = express()
 
 // Middleware
 const corsOptions = {
-  origin: ['http://localhost:5173', 'https://saenus.vercel.app/'],
+  origin: ['http://localhost:5173', 'https://saenus.vercel.app'],
   credentials: true,
 }
 
