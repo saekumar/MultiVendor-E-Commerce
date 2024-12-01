@@ -11,10 +11,7 @@ const app = express()
 
 // Middleware
 const corsOptions = {
-  origin: [
-    'http://localhost:5173',
-    'https://multivendor-e-commerce.onrender.com/',
-  ],
+  origin: ['http://localhost:5173', 'https://saenus.vercel.app/'],
   credentials: true,
 }
 
