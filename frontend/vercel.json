@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/api/:path*",
+      "destination": "https://multivendor-e-commerce.onrender.com/api/:path*"
+    }
+  ]
+}
