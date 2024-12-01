@@ -11,7 +11,10 @@ const app = express()
 
 // Middleware
 const corsOptions = {
-  origin: 'http://localhost:5173',
+  origin: [
+    'http://localhost:5173',
+    'https://multivendor-e-commerce.onrender.com/',
+  ],
   credentials: true,
 }
 
